@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAdapt | AI-Powered Adaptive Learning</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>Edu<span class="logo-highlight">Adapt</span></span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn-primary launch-quiz-btn">
+                    <i class="fas fa-rocket"></i> Launch Adaptive Quiz
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI-Powered</span><br>
+                    Adaptive Learning Platform
+                </h1>
+                <p class="hero-subtitle">
+                    Enjoy individualized instruction that is tailored to your particular learning preferences, speed, and skill level. In real time, our AI engine generates unique learning pathways.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">94%</div>
+                        <div class="stat-label">Student Engagement</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2.3x</div>
+                        <div class="stat-label">Learning Efficiency</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">87%</div>
+                        <div class="stat-label">Performance Improvement</div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn-primary btn-large launch-quiz-btn">
+                        <i class="fas fa-play-circle"></i> Start Adaptive Quiz
+                    </button>
+                    <button class="btn-outline btn-large" id="learn-more-btn">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="ai-visualization">
+                    <div class="ai-core">
+                        <i class="fas fa-brain"></i>
+                        <div class="ai-pulse"></div>
+                        <div class="ai-pulse delay-1"></div>
+                        <div class="ai-pulse delay-2"></div>
+                    </div>
+                    
+                    <!-- Learning Progress Map -->
+                    <div class="learning-path-container">
+                        <div class="learning-path-simple">
+                            <div class="path-level">
+                                <i class="fas fa-seedling"></i>
+                                <span>Beginner</span>
+                            </div>
+                            <div class="path-arrow">→</div>
+                            <div class="path-level">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Intermediate</span>
+                            </div>
+                            <div class="path-arrow">→</div>
+                            <div class="path-level">
+                                <i class="fas fa-trophy"></i>
+                                <span>Master</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <h2 class="section-title">✨ Intelligent Features</h2>
+            <p class="section-subtitle">Driven by cutting-edge AI algorithms</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Adaptive AI Engine</h3>
+                <p>Adapting difficulty in real time based on performance guarantees that every learner has the right amount of challenge.</p>
+                <div class="feature-highlight">
+                    <span class="highlight-tag">AI-Powered</span>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-wave-square"></i>
+                </div>
+                <h3>Personalized Learning Paths</h3>
+                <p>Personalized learning paths that are dynamically developed according to each person's learning preferences, shortcomings, and abilities.</p>
+                <div class="feature-highlight">
+                    <span class="highlight-tag">100% Personalized</span>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Intelligent Insights</h3>
+                <p>AI-Generated insights and suggestions to optimize learning effectiveness and retention.</p>
+                <div class="feature-highlight">
+                    <span class="highlight-tag">Smart Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="process-section">
+        <div class="section-header">
+            <h2 class="section-title">🔄 How EduAdapt Works</h2>
+            <p class="section-subtitle">The AI-powered learning journey</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number-wrapper">
+                    <div class="step-number">01</div>
+                </div>
+                <div class="step-content">
+                    <h3>Initial Assessment</h3>
+                    <p>AI analyzes your current knowledge level through smart diagnostic questions to understand your starting point.</p>
+                </div>
+                <div class="step-visual">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number-wrapper">
+                    <div class="step-number">02</div>
+                </div>
+                <div class="step-content">
+                    <h3>AI Analysis</h3>
+                    <p>Machine learning algorithms identify your unique learning patterns, strengths, and areas for improvement.</p>
+                </div>
+                <div class="step-visual">
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number-wrapper">
+                    <div class="step-number">03</div>
+                </div>
+                <div class="step-content">
+                    <h3>Adaptive Learning</h3>
+                    <p>Content difficulty adjusts in real-time based on your performance, keeping you in the optimal learning zone.</p>
+                </div>
+                <div class="step-visual">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number-wrapper">
+                    <div class="step-number">04</div>
+                </div>
+                <div class="step-content">
+                    <h3>Progress Optimization</h3>
+                    <p>Continuous feedback and personalized recommendations ensure maximum learning efficiency and growth.</p>
+                </div>
+                <div class="step-visual">
+                    <i class="fas fa-trophy"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adaptive Quiz Platform -->
+    <div id="quiz-platform" class="quiz-platform">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <div class="quiz-title">
+                    <i class="fas fa-brain"></i>
+                    <h2>Adaptive Learning Quiz</h2>
+                    <span class="quiz-badge">AI-Powered</span>
+                </div>
+                
+                <div class="quiz-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Level</span>
+                        <span class="stat-value" id="current-level">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Progress</span>
+                        <span class="stat-value" id="question-counter">0/10</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Score</span>
+                        <span class="stat-value" id="current-score">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-content">
+                <div class="quiz-sidebar">
+                    <div class="ai-insights">
+                        <h3><i class="fas fa-robot"></i> AI Insights</h3>
+                        <div class="insight-item">
+                            <div class="insight-label">Difficulty Level</div>
+                            <div class="insight-value" id="difficulty-level">Adapting...</div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-label">Subject</div>
+                            <div class="insight-value" id="current-subject">Mixed</div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-label">Questions Left</div>
+                            <div class="insight-value" id="questions-left">10</div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-tracker">
+                        <h3><i class="fas fa-chart-line"></i> Progress</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="quiz-progress" style="width: 0%"></div>
+                        </div>
+                        <div class="time-tracker">
+                            <i class="fas fa-clock"></i>
+                            <span id="quiz-timer">00:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-main">
+                    <!-- Question Screen -->
+                    <div class="question-screen" id="question-screen">
+                        <div class="question-header">
+                            <span class="subject-tag" id="question-subject">Mixed</span>
+                            <span class="difficulty-tag" id="question-difficulty">Standard</span>
+                            <span class="question-number" id="question-number">Question 1</span>
+                        </div>
+                        
+                        <div class="question-content">
+                            <h3 class="question-text" id="question-text">
+                                Loading question...
+                            </h3>
+                            
+                            <div class="options-container" id="options-container">
+                                <!-- Options will be dynamically inserted here -->
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-controls">
+                            <div class="control-spacer"></div>
+                            <button class="btn-primary" id="submit-btn" disabled>
+                                Submit Answer <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Feedback Screen -->
+                    <div class="feedback-screen" id="feedback-screen" style="display: none;">
+                        <div class="feedback-header">
+                            <div class="feedback-icon" id="feedback-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3 id="feedback-title">Feedback</h3>
+                        </div>
+                        
+                        <div class="feedback-content">
+                            <p id="feedback-text">Loading feedback...</p>
+                            
+                            <div class="correct-answer">
+                                <strong>Correct Answer:</strong>
+                                <span id="correct-answer-text">-</span>
+                            </div>
+                            
+                            <div class="explanation">
+                                <strong>Explanation:</strong>
+                                <p id="explanation-text">-</p>
+                            </div>
+                            
+                            <button class="btn-primary btn-large" id="next-btn">
+                                Continue to Next Question <i class="fas fa-forward"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Results Screen -->
+                    <div class="results-screen" id="results-screen" style="display: none;">
+                        <div class="results-header">
+                            <div class="results-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h2>Quiz Complete!</h2>
+                            <p class="results-subtitle">Your AI-powered performance analysis</p>
+                        </div>
+                        
+                        <div class="results-content">
+                            <div class="score-display">
+                                <div class="score-circle">
+                                    <span id="final-score-percentage">0%</span>
+                                </div>
+                                <h3>Overall Accuracy</h3>
+                                <p class="score-details" id="score-details">Based on 10 adaptive questions</p>
+                            </div>
+                            
+                            <div class="results-analysis">
+                                <div class="analysis-section">
+                                    <h4><i class="fas fa-brain"></i> AI Analysis</h4>
+                                    <div class="analysis-grid">
+                                        <div class="analysis-item">
+                                            <div class="analysis-label">Level Achieved</div>
+                                            <div class="analysis-value" id="level-achieved">Beginner</div>
+                                        </div>
+                                        <div class="analysis-item">
+                                            <div class="analysis-label">Time Spent</div>
+                                            <div class="analysis-value" id="time-spent">00:00</div>
+                                        </div>
+                                        <div class="analysis-item">
+                                            <div class="analysis-label">Final Score</div>
+                                            <div class="analysis-value" id="final-score">0/100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="results-actions">
+                                <button class="btn-primary" id="restart-btn">
+                                    <i class="fas fa-redo"></i> Try Again
+                                </button>
+                                <button class="btn-outline" id="return-home-btn">
+                                    <i class="fas fa-home"></i> Return to Home
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quiz-footer">
+                <button class="btn-outline" id="exit-quiz-btn">
+                    <i class="fas fa-home"></i> Exit Quiz
+                </button>
+                <div class="footer-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span>10 Mixed Questions - Math, Science & General Knowledge</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2 class="section-title">📞 Contact Us</h2>
+            <p class="section-subtitle">Ready to transform education with AI?</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Members</h3>
+                    <p>ML Engineers, AI Engineers, Educators</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p>Python, Flask, AI/ML, Adaptive Learning</p>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <h3>Experience Adaptive Learning</h3>
+                <p>Try our AI-powered adaptive quiz to see the future of personalized education.</p>
+                <button class="btn-primary btn-large launch-quiz-btn">
+                    <i class="fas fa-play-circle"></i> Launch Demo Quiz
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>Edu<span class="logo-highlight">Adapt</span></span>
+                </div>
+                <p>AI-Powered Adaptive Learning Platform transforming education through personalization.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>AI/ML</span>
+                    <span>Adaptive Learning</span>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#features" class="footer-link">Features</a>
+                <a href="#how-it-works" class="footer-link">How It Works</a>
+                <a href="#contact" class="footer-link">Contact</a>
+                <a href="#" class="footer-link launch-quiz-btn">Launch Adaptive Quiz</a>
+            </div>
+            
+            <div class="footer-demo">
+                <h4>Quick Demo</h4>
+                <button class="btn-outline launch-quiz-btn">
+                    <i class="fas fa-rocket"></i> Launch Quiz
+                </button>
+                <p>Experience AI-Powered adaptive learning in action</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 EduAdapt | AI-Powered Adaptive Learning Platform</p>
+        </div>
+    </footer>
+
+    <!-- Keep the existing JavaScript code from your index.html -->
+    <script>
+        // Quiz State Management
+        let quizState = {
+            sessionId: null,
+            currentQuestion: null,
+            selectedAnswer: null,
+            score: 0,
+            questionCount: 0,
+            totalQuestions: 10,
+            timer: 0,
+            timerInterval: null,
+            startTime: null
+        };
+
+        // DOM Elements
+        const quizPlatform = document.getElementById('quiz-platform');
+        const questionScreen = document.getElementById('question-screen');
+        const feedbackScreen = document.getElementById('feedback-screen');
+        const resultsScreen = document.getElementById('results-screen');
+        const submitBtn = document.getElementById('submit-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const restartBtn = document.getElementById('restart-btn');
+        const exitQuizBtn = document.getElementById('exit-quiz-btn');
+        const returnHomeBtn = document.getElementById('return-home-btn');
+        const learnMoreBtn = document.getElementById('learn-more-btn');
+        const launchQuizBtns = document.querySelectorAll('.launch-quiz-btn');
+        const footerLinks = document.querySelectorAll('.footer-link');
+
+        // Initialize event listeners
+        function initEventListeners() {
+            // Launch quiz buttons
+            launchQuizBtns.forEach(btn => {
+                btn.addEventListener('click', startAdaptiveQuiz);
+            });
+            
+            // Learn more button
+            if (learnMoreBtn) {
+                learnMoreBtn.addEventListener('click', () => {
+                    scrollToSection('features');
+                });
+            }
+            
+            // Navigation links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const sectionId = link.getAttribute('href').substring(1);
+                    scrollToSection(sectionId);
+                });
+            });
+            
+            // Footer links
+            footerLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    if (link.classList.contains('launch-quiz-btn')) {
+                        e.preventDefault();
+                        startAdaptiveQuiz();
+                    } else {
+                        e.preventDefault();
+                        const sectionId = link.getAttribute('href').substring(1);
+                        scrollToSection(sectionId);
+                    }
+                });
+            });
+            
+            // Quiz buttons
+            submitBtn.addEventListener('click', submitAnswer);
+            nextBtn.addEventListener('click', loadNextQuestion);
+            restartBtn.addEventListener('click', restartQuiz);
+            exitQuizBtn.addEventListener('click', returnToHome);
+            returnHomeBtn.addEventListener('click', returnToHome);
+        }
+
+        // Navigation Functions
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+                
+                // Update active nav link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        }
+
+        // Quiz Platform Functions
+        async function startAdaptiveQuiz() {
+            // Hide all sections except quiz
+            document.querySelectorAll('section, footer').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Show quiz platform
+            quizPlatform.style.display = 'block';
+            document.body.classList.add('quiz-active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Initialize quiz
+            await initializeQuiz();
+        }
+
+        async function initializeQuiz() {
+            quizState = {
+                sessionId: null,
+                currentQuestion: null,
+                selectedAnswer: null,
+                score: 0,
+                questionCount: 0,
+                totalQuestions: 10,
+                timer: 0,
+                timerInterval: null,
+                startTime: null,
+                mockSessionQuestions: []
+            };
+            
+            // Reset UI
+            questionScreen.style.display = 'block';
+            feedbackScreen.style.display = 'none';
+            resultsScreen.style.display = 'none';
+            
+            // Update UI
+            updateScore(0);
+            updateQuestionCounter(0, quizState.totalQuestions);
+            updateProgressBar(0);
+            updateTimer('00:00');
+            updateQuestionsLeft(10);
+            
+            // Start timer
+            startTimer();
+            
+            // Start quiz session
+            await startQuizSession();
+        }
+
+        function startTimer() {
+            quizState.timer = 0;
+            quizState.startTime = Date.now();
+            quizState.timerInterval = setInterval(() => {
+                quizState.timer++;
+                const minutes = Math.floor(quizState.timer / 60);
+                const seconds = quizState.timer % 60;
+                updateTimer(`${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`);
+            }, 1000);
+        }
+
+        function stopTimer() {
+            if (quizState.timerInterval) {
+                clearInterval(quizState.timerInterval);
+                quizState.timerInterval = null;
+            }
+        }
+
+        async function startQuizSession() {
+            try {
+                const response = await fetch('/api/quiz/start', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    quizState.sessionId = data.session_id;
+                    await loadQuestion();
+                } else {
+                    throw new Error(data.error || 'Failed to start quiz session');
+                }
+            } catch (error) {
+                console.error('Error starting quiz session:', error);
+                // Fallback to mock session
+                quizState.sessionId = `mock_session_${Date.now()}`;
+                loadMockQuestion();
+            }
+        }
+
+        async function loadQuestion() {
+            if (!quizState.sessionId) return;
+            
+            try {
+                const response = await fetch('/api/quiz/question', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        session_id: quizState.sessionId
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayQuestion(data.question, data.progress);
+                } else {
+                    throw new Error(data.error || 'Failed to load question');
+                }
+            } catch (error) {
+                console.error('Error loading question:', error);
+                loadMockQuestion();
+            }
+        }
+
+        function displayQuestion(question, progress) {
+            quizState.currentQuestion = question;
+            quizState.selectedAnswer = null;
+                        
+            // Update question display
+            document.getElementById('question-text').textContent = question.text;
+            document.getElementById('question-subject').textContent = question.subject;
+            document.getElementById('question-difficulty').textContent = 
+                question.difficulty === 1 ? 'Standard' : 'Challenging';
+            document.getElementById('question-number').textContent = `Question ${question.question_number}`;
+            
+            // Update counters - use question.question_number from backend
+            updateQuestionCounter(question.question_number, quizState.totalQuestions);
+            document.getElementById('current-level').textContent = 'Mixed Subjects';
+            document.getElementById('current-subject').textContent = question.subject;
+            document.getElementById('difficulty-level').textContent = 
+                question.difficulty === 1 ? 'Standard' : 'Challenging';
+            
+            // Update progress bar
+            updateProgressBar(progress.percentage);
+            updateQuestionsLeft(quizState.totalQuestions - question.question_number);
+            
+            // Create options
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+            
+            const optionLetters = ['A', 'B', 'C', 'D'];
+            question.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option';
+                optionDiv.innerHTML = `
+                    <div class="option-letter">${optionLetters[index]}</div>
+                    <div class="option-text">${option}</div>
+                `;
+                
+                // Add click event
+                optionDiv.addEventListener('click', () => {
+                    selectAnswer(index, optionDiv);
+                });
+                
+                optionsContainer.appendChild(optionDiv);
+            });
+            
+            // Reset submit button
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Submit Answer <i class="fas fa-arrow-right"></i>';
+            
+            // Show question screen
+            questionScreen.style.display = 'block';
+            feedbackScreen.style.display = 'none';
+        }
+
+        function loadMockQuestion() {
+            const mockQuestions = [
+                {
+                    id: 'mock_1',
+                    text: "What is 15 + 27?",
+                    options: ["42", "32", "52", "37"],
+                    subject: "Mathematics",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "15 + 27 = 42"
+                },
+                {
+                    id: 'mock_2',
+                    text: "Solve for x: 2x + 5 = 15",
+                    options: ["x = 5", "x = 10", "x = 7.5", "x = 20"],
+                    subject: "Mathematics",
+                    difficulty: 2,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "2x + 5 = 15 → 2x = 10 → x = 5"
+                },
+                {
+                    id: 'mock_3',
+                    text: "What is the derivative of x²?",
+                    options: ["x", "2x", "x²", "2"],
+                    subject: "Mathematics",
+                    difficulty: 2,
+                    question_number: quizState.questionCount + 1,
+                    correct: 1,
+                    explanation: "d/dx(x²) = 2x"
+                },
+                {
+                    id: 'mock_4',
+                    text: "What is 75% of 200?",
+                    options: ["150", "175", "125", "100"],
+                    subject: "Mathematics",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "75% of 200 = 150"
+                },
+                {
+                    id: 'mock_5',
+                    text: "What is the area of a rectangle with length 8 and width 5?",
+                    options: ["40", "13", "45", "35"],
+                    subject: "Mathematics",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "Area = length × width = 8 × 5 = 40"
+                },
+                {
+                    id: 'mock_6',
+                    text: "What is 12 × 7?",
+                    options: ["84", "72", "96", "78"],
+                    subject: "Mathematics",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "12 × 7 = 84"
+                },
+                {
+                    id: 'mock_7',
+                    text: "What is the square root of 64?",
+                    options: ["8", "6", "7", "9"],
+                    subject: "Mathematics",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "8 × 8 = 64, so √64 = 8"
+                },
+                {
+                    id: 'mock_8',
+                    text: "What is 144 ÷ 12?",
+                    options: ["12", "10", "14", "11"],
+                    subject: "Mathematics",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "144 ÷ 12 = 12"
+                },
+                
+                // Science Questions (8)
+                {
+                    id: 'mock_9',
+                    text: "Which planet is closest to the Sun?",
+                    options: ["Venus", "Mars", "Mercury", "Earth"],
+                    subject: "Science",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 2,
+                    explanation: "Mercury is the closest planet to the Sun"
+                },
+                {
+                    id: 'mock_10',
+                    text: "What is the chemical symbol for water?",
+                    options: ["H₂O", "CO₂", "O₂", "NaCl"],
+                    subject: "Science",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "Water is H₂O"
+                },
+                {
+                    id: 'mock_11',
+                    text: "Which organ pumps blood throughout the body?",
+                    options: ["Liver", "Heart", "Brain", "Lungs"],
+                    subject: "Science",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 1,
+                    explanation: "The heart pumps blood"
+                },
+                {
+                    id: 'mock_12',
+                    text: "What force keeps us on the ground?",
+                    options: ["Magnetism", "Gravity", "Friction", "Inertia"],
+                    subject: "Science",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 1,
+                    explanation: "Gravity keeps us on the ground"
+                },
+                {
+                    id: 'mock_13',
+                    text: "What is the atomic number of Oxygen?",
+                    options: ["8", "6", "16", "10"],
+                    subject: "Science",
+                    difficulty: 2,
+                    question_number: quizState.questionCount + 1,
+                    correct: 0,
+                    explanation: "Oxygen has atomic number 8"
+                },
+                {
+                    id: 'mock_14',
+                    text: "Which gas do plants absorb during photosynthesis?",
+                    options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+                    subject: "Science",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 1,
+                    explanation: "Plants absorb CO₂ during photosynthesis"
+                },
+                {
+                    id: 'mock_15',
+                    text: "What is the largest planet in our solar system?",
+                    options: ["Earth", "Saturn", "Jupiter", "Neptune"],
+                    subject: "Science",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 2,
+                    explanation: "Jupiter is the largest planet"
+                },
+                {
+                    id: 'mock_16',
+                    text: "What is the main component of air?",
+                    options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+                    subject: "Science",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 2,
+                    explanation: "Nitrogen makes up about 78% of air"
+                },
+                
+                // GK Questions (4)
+                {
+                    id: 'mock_17',
+                    text: "Who wrote 'Romeo and Juliet'?",
+                    options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+                    subject: "General Knowledge",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 1,
+                    explanation: "William Shakespeare wrote 'Romeo and Juliet'"
+                },
+                {
+                    id: 'mock_18',
+                    text: "What is the capital of France?",
+                    options: ["London", "Berlin", "Madrid", "Paris"],
+                    subject: "General Knowledge",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 3,
+                    explanation: "Paris is the capital of France"
+                },
+                {
+                    id: 'mock_19',
+                    text: "Who painted the Mona Lisa?",
+                    options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+                    subject: "General Knowledge",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 2,
+                    explanation: "Leonardo da Vinci painted the Mona Lisa"
+                },
+                {
+                    id: 'mock_20',
+                    text: "What is the largest ocean on Earth?",
+                    options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+                    subject: "General Knowledge",
+                    difficulty: 1,
+                    question_number: quizState.questionCount + 1,
+                    correct: 3,
+                    explanation: "The Pacific Ocean is the largest ocean"
+                }
+            ];
+            
+            if (quizState.questionCount === 0) {
+                for (let i = mockQuestions.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [mockQuestions[i], mockQuestions[j]] = [mockQuestions[j], mockQuestions[i]];
+                }
+                quizState.mockSessionQuestions = mockQuestions.slice(0, 10);
+            }
+            
+            const progress = {
+                current: quizState.questionCount + 1,
+                total: quizState.totalQuestions,
+                percentage: ((quizState.questionCount + 1) / quizState.totalQuestions) * 100
+            };
+            
+            const questionIndex = quizState.questionCount % quizState.totalQuestions;
+            displayQuestion(quizState.mockSessionQuestions[questionIndex], progress);
+            quizState.currentQuestion = quizState.mockSessionQuestions[questionIndex];
+        }
+
+        function selectAnswer(index, element) {
+            // Remove selection from all options
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            
+            // Add selection to clicked option
+            element.classList.add('selected');
+            quizState.selectedAnswer = index;
+            
+            // Enable submit button
+            submitBtn.disabled = false;
+        }
+
+        async function submitAnswer() {
+            if (quizState.selectedAnswer === null) {
+                alert('Please select an answer before submitting.');
+                return;
+            }
+            
+            // Disable submit button and show processing
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+            
+            try {
+                const response = await fetch('/api/quiz/answer', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        session_id: quizState.sessionId,
+                        question_id: quizState.currentQuestion.id,
+                        answer_index: quizState.selectedAnswer
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showFeedback(data.result, data.is_complete);
+                } else {
+                    throw new Error(data.error || 'Failed to submit answer');
+                }
+            } catch (error) {
+                console.error('Error submitting answer:', error);
+                showMockFeedback();
+            }
+        }
+
+        function showFeedback(result, isComplete) {
+            // Update score
+            quizState.score = result.new_score;
+            updateScore(quizState.score);
+            
+            // Update question count from backend response
+            quizState.questionCount = result.questions_answered;
+            
+            // Determine feedback
+            const isCorrect = result.correct;
+            const feedbackIcon = document.getElementById('feedback-icon');
+            const feedbackTitle = document.getElementById('feedback-title');
+            const feedbackText = document.getElementById('feedback-text');
+            
+            if (isCorrect) {
+                feedbackIcon.innerHTML = '<i class="fas fa-check-circle"></i>';
+                feedbackIcon.style.color = '#10b981';
+                feedbackTitle.textContent = 'Correct!';
+                feedbackText.textContent = 'Great job! Your answer is correct.';
+            } else {
+                feedbackIcon.innerHTML = '<i class="fas fa-times-circle"></i>';
+                feedbackIcon.style.color = '#ef4444';
+                feedbackTitle.textContent = 'Incorrect';
+                feedbackText.textContent = 'Better luck next time!';
+            }
+            
+            // Update feedback details
+            document.getElementById('correct-answer-text').textContent = result.correct_answer;
+            document.getElementById('explanation-text').textContent = result.explanation;
+            
+            // Update next button
+            if (isComplete || quizState.questionCount >= quizState.totalQuestions) {
+                nextBtn.textContent = 'View Results';
+                nextBtn.onclick = completeQuiz;
+            } else {
+                nextBtn.textContent = 'Continue to Next Question';
+                nextBtn.onclick = loadNextQuestion;
+            }
+            
+            // Show feedback screen
+            questionScreen.style.display = 'none';
+            feedbackScreen.style.display = 'block';
+        }
+
+        function showMockFeedback() {
+            const questionIndex = (quizState.questionCount - 1) % 10;
+            
+            const isCorrect = quizState.selectedAnswer === quizState.currentQuestion.correct;
+            
+            const mockResult = {
+                correct: isCorrect,
+                correct_answer: quizState.currentQuestion.options[quizState.currentQuestion.correct] || "Answer not available",
+                explanation: quizState.currentQuestion.explanation || "This is a sample explanation.",
+                new_score: quizState.score + (isCorrect ? 10 : 0),
+                questions_answered: quizState.questionCount
+            };
+            
+            const isComplete = quizState.questionCount >= quizState.totalQuestions;
+            showFeedback(mockResult, isComplete);
+        }
+
+        function loadNextQuestion() {
+            if (quizState.questionCount >= quizState.totalQuestions) {
+                completeQuiz();
+            } else {
+                loadQuestion();
+            }
+        }
+
+        async function completeQuiz() {
+            try {
+                const response = await fetch('/api/quiz/complete', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        session_id: quizState.sessionId
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showResults(data.summary);
+                } else {
+                    throw new Error(data.error || 'Failed to complete quiz');
+                }
+            } catch (error) {
+                console.error('Error completing quiz:', error);
+                showMockResults();
+            }
+        }
+
+        function showResults(summary) {
+            // Stop timer
+            stopTimer();
+            
+            // Update results
+            document.getElementById('final-score-percentage').textContent = `${summary.accuracy}%`;
+            document.getElementById('score-details').textContent = 
+                `Final Score: ${summary.final_score}/100`;
+            document.getElementById('level-achieved').textContent = summary.level_achieved;
+            document.getElementById('final-score').textContent = `${summary.final_score}/100`;
+            document.getElementById('time-spent').textContent = summary.time_spent;
+            
+            // Show results screen
+            questionScreen.style.display = 'none';
+            feedbackScreen.style.display = 'none';
+            resultsScreen.style.display = 'block';
+        }
+
+        function showMockResults() {
+            const mockSummary = {
+                total_questions: quizState.questionCount,
+                final_score: quizState.score,
+                accuracy: Math.min(100, Math.floor((quizState.score / 100) * 100)),
+                level_achieved: quizState.score >= 80 ? 'Advanced' : quizState.score >= 60 ? 'Intermediate' : 'Beginner',
+                time_spent: formatTime(quizState.timer)
+            };
+            
+            showResults(mockSummary);
+        }
+
+        function restartQuiz() {
+            initializeQuiz();
+        }
+
+        function returnToHome() {
+            // Stop timer
+            stopTimer();
+            
+            // Hide quiz platform
+            quizPlatform.style.display = 'none';
+            document.body.classList.remove('quiz-active');
+            
+            // Show all sections
+            document.querySelectorAll('section, footer').forEach(el => {
+                el.style.display = 'block';
+            });
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // UI Update Methods
+        function updateScore(score) {
+            document.getElementById('current-score').textContent = score;
+        }
+
+        function updateQuestionCounter(current, total) {
+            document.getElementById('question-counter').textContent = `${current}/${total}`;
+        }
+
+        function updateProgressBar(percentage) {
+            document.getElementById('quiz-progress').style.width = `${percentage}%`;
+        }
+
+        function updateTimer(time) {
+            document.getElementById('quiz-timer').textContent = time;
+        }
+
+        function updateQuestionsLeft(count) {
+            document.getElementById('questions-left').textContent = count;
+        }
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initEventListeners();
+        });
+    </script>
+</body>
+</html>
