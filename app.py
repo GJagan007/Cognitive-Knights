@@ -7,8 +7,10 @@ from flask import Flask, jsonify, send_file, request, send_from_directory
 import json
 import random
 from datetime import datetime
-import time
 import os
+import threading
+import webbrowser
+import time
 
 app = Flask(__name__, static_folder='static')
 
@@ -451,6 +453,10 @@ def health_check():
         "question_selection": "Random 10 from 20"
     })
 
+def open_browser():
+    time.sleep(1)
+    webbrowser.open("http://127.0.0.1:5000")
+
 if __name__ == '__main__':
     print("\n" + "="*60)
     print("🚀 EduAdapt Platform Starting")
@@ -465,4 +471,5 @@ if __name__ == '__main__':
     print("\n🌐 Server: http://localhost:5000")
     print("="*60)
     
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    threading.Thread(target=open_browser).start()
+    app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=False)
